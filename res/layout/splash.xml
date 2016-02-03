@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:baiduadsdk="http://schemas.android.com/apk/res/com.sdkdemo"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fdfefa" >
+
+    <TextView
+        android:id="@+id/bottonText"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:background="#F73809"
+        android:text="关注微信公众号菜鸟要飞获取应用源码"
+        android:textColor="#000" />
+
+    <RelativeLayout
+        android:id="@+id/adsRl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#F73809"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_above="@id/bottonText" >
+
+        <TextView
+            android:id="@+id/contentText"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:background="#F73809"
+            android:layout_centerInParent="true"
+            android:textSize="20dp"
+            android:text="关注微信公众号【菜鸟要飞】获取应用源码"
+            android:textColor="#000" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
