@@ -62,7 +62,7 @@
                 android:layout_margin="5dp"
                 android:gravity="left"
                 
-                android:text="模式一：只打开通知开关，可以做到和小米魅族的红包助手一样，来红包时秒开回话列表，然后手动拆红包"
+                android:text="模式一：只打开通知开关，可以做到和小米魅族的红包助手一样，来红包时秒开聊天界面，然后手动拆红包"
                 android:textColor="#F73809"
                 android:textSize="18sp" />
             

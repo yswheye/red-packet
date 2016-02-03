@@ -58,7 +58,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/rl_top"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         android:layout_weight="1"
         android:orientation="vertical" >
 
@@ -68,8 +68,8 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
             android:text="使用步骤"
             android:textColor="@android:color/white"
             android:textSize="20sp" />
@@ -82,7 +82,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp" >
+            android:padding="20dp" >
 
             <TextView
                 android:layout_width="wrap_content"
@@ -114,7 +114,7 @@
             android:id="@+id/rl_notification"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp" >
+            android:padding="20dp" >
 
             <TextView
                 android:layout_width="wrap_content"
@@ -146,7 +146,7 @@
             android:id="@+id/rl_notice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp" >
+            android:padding="20dp" >
 
             <TextView
                 android:layout_width="wrap_content"
@@ -175,7 +175,7 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="10dp"
+        android:layout_height="20dp"
         android:layout_alignParentBottom="true"
         android:background="#DA251C" />
 
