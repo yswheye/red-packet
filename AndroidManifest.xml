@@ -57,13 +57,13 @@
                 android:name="android.accessibilityservice"
                 android:resource="@xml/accessible_service_config" />
         </service>
-        <!-- <service
+        <service
             android:name=".NotificationService"
             android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" >
             <intent-filter>
                 <action android:name="android.service.notification.NotificationListenerService" />
             </intent-filter>
-        </service> -->
+        </service>
     </application>
 
 </manifest>
