@@ -4,7 +4,7 @@
         android:description="@string/label_accessibility_descript"
         android:accessibilityEventTypes="typeWindowStateChanged|typeNotificationStateChanged|typeViewFocused"
         android:accessibilityFeedbackType="feedbackGeneric"
-        android:packageNames="com.tencent.mm,com.eg.android.AlipayGphone"
+        android:packageNames="com.tencent.mm"
         android:notificationTimeout="100"
         android:accessibilityFlags=""
         android:canRetrieveWindowContent="true"/>

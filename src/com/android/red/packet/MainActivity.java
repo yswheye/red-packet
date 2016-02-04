@@ -10,14 +10,11 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.RelativeLayout;
-import android.widget.Toast;
 import android.widget.ToggleButton;
-import com.android.red.packet.R;
 
 public class MainActivity extends FragmentActivity implements OnClickListener {
     private static final Intent accessibilityIntent = new Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS);
     private static final Intent notificationIntent = new Intent("android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS");
-    private long mExitTime;
     private ToggleButton accessibilityToggleButton, notificationToggleButton;
     private RelativeLayout notificationRelativeLayout, noticeRelativeLayout;
 
@@ -66,13 +63,9 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
-            if ((System.currentTimeMillis() - mExitTime) > 2000) {
-                Toast.makeText(this, "再按一次退出程序", Toast.LENGTH_SHORT).show();
-                mExitTime = System.currentTimeMillis();
-
-            } else {
-                finish();
-            }
+            Intent home = new Intent(Intent.ACTION_MAIN);  
+            home.addCategory(Intent.CATEGORY_HOME);   
+            startActivity(home);
             return true;
         }
         return super.onKeyDown(keyCode, event);
