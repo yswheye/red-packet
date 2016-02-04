@@ -8,6 +8,7 @@ import android.app.Application;
 import android.app.KeyguardManager;
 import android.content.ContentResolver;
 import android.content.Context;
+import android.os.Handler;
 import android.os.PowerManager;
 import android.provider.Settings;
 import android.text.TextUtils;
@@ -18,6 +19,7 @@ import android.view.accessibility.AccessibilityManager;
  */
 public class LuckyApplication extends Application {
     public static boolean autoGetMoney = false;
+    private static Handler mHandler = new Handler();
 
     @Override
     public void onCreate() {
@@ -34,6 +36,19 @@ public class LuckyApplication extends Application {
         PowerManager.WakeLock wakeLock = pm.newWakeLock(PowerManager.FULL_WAKE_LOCK | PowerManager.ACQUIRE_CAUSES_WAKEUP | PowerManager.ON_AFTER_RELEASE, "MyWakeLock");
 
         wakeLock.acquire();
+    }
+    
+    public static void releaseScreen(Application activity) {
+        PowerManager pm = (PowerManager) activity.getSystemService(Context.POWER_SERVICE);
+        final PowerManager.WakeLock wakeLock = pm.newWakeLock(PowerManager.FULL_WAKE_LOCK | PowerManager.ACQUIRE_CAUSES_WAKEUP | PowerManager.ON_AFTER_RELEASE, "MyWakeLock");
+
+        mHandler.postDelayed(new Runnable() {
+            
+            @Override
+            public void run() {
+                wakeLock.release();
+            }
+        }, 5000);
     }
 
     @SuppressLint("NewApi")

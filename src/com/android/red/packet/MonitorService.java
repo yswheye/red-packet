@@ -193,6 +193,8 @@ public class MonitorService extends AccessibilityService {
                 break;
             }
         }
+        
+        LuckyApplication.releaseScreen(getApplication());
         /*
          * while(parent != null){ Log.i(TAG, "parent isClick:"+parent); if(parent.isClickable()){
          * LuckyApplication.autoGetMoney = false;
