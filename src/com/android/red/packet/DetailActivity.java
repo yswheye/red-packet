@@ -1,10 +1,11 @@
-package com.newbiefly.money;
+package com.android.red.packet;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.TextView;
+import com.android.red.packet.R;
 
 public class DetailActivity extends Activity {
 

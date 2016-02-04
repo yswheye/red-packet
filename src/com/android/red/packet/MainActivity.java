@@ -1,4 +1,4 @@
-package com.newbiefly.money;
+package com.android.red.packet;
 
 
 import android.content.Intent;
@@ -12,6 +12,7 @@ import android.view.View.OnClickListener;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 import android.widget.ToggleButton;
+import com.android.red.packet.R;
 
 public class MainActivity extends FragmentActivity implements OnClickListener {
     private static final Intent accessibilityIntent = new Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS);

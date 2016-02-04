@@ -61,8 +61,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:gravity="left"
-                
-                android:text="模式一：只打开通知开关，可以做到和小米魅族的红包助手一样，来红包时秒开聊天界面，然后手动拆红包"
+                android:padding="10dp"
+                android:text="@string/tips_instruction"
                 android:textColor="#F73809"
                 android:textSize="18sp" />
             
@@ -76,20 +76,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:gravity="left"
-                android:text="模式二：只打开辅助功能，极限拆红包模式"
-                android:textColor="#F73809"
-                android:textSize="18sp" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0.5dp"
-                android:background="#cccccc" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:gravity="left"
+                android:padding="10dp"
                 android:text="***	完成后，按下HOME键，让本应用保持在后台运行，如手机重启需要重新打开此应用"
                 android:textColor="#F73809"
                 android:textSize="18sp" />
@@ -104,6 +91,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:gravity="left"
+                android:padding="10dp"
                 android:text="***	关闭锁屏密码，手机锁屏后仍自动抢红包"
                 android:textColor="#F73809"
                 android:textSize="18sp" />
@@ -117,6 +105,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
+                android:padding="10dp"
                 android:gravity="left"
                 android:text="***	必须关闭免打扰，PC端登录的话也要关闭免打扰"
                 android:textColor="#F73809"
@@ -133,6 +122,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:gravity="left"
+                android:padding="10dp"
                 android:text="###	本应用目前只支持微信，且在当前聊天界面时不会抢红包"
                 android:textColor="#F73809"
                 android:textSize="18sp" />
@@ -148,6 +138,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:gravity="left"
+                android:padding="10dp"
                 android:text="###	微信严禁自动拆红包软件，禁止外传，使用中一切后果自负"
                 android:textColor="#F73809"
                 android:textSize="18sp" />

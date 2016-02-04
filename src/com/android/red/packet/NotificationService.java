@@ -1,4 +1,4 @@
-package com.newbiefly.money;
+package com.android.red.packet;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,7 +26,6 @@ public class NotificationService extends NotificationListenerService {
                 if (!TextUtils.isEmpty(title)) textList.add(title);
 
                 String detailText = extras.getString(NotificationCompat.EXTRA_TEXT);
-                Log.w(TAG, "ÊÂ¼þdetailText:"+detailText);
                 if (!TextUtils.isEmpty(detailText)) textList.add(detailText);
 
                 if (textList.size() > 0) {
@@ -51,6 +50,5 @@ public class NotificationService extends NotificationListenerService {
 
     @Override
     public void onNotificationRemoved(StatusBarNotification sbn) {
-
     }
 }
